@@ -51,3 +51,21 @@ function scheduleEvents() {
     hour10pm.val(event22);
     
 }
+// Background color 
+function past () {
+    $("form-control").each(function (){
+        var timeTest = parseInt($(this).attr("id"));
+        hour = parseInt(hour);
+        console.log(timeTest);
+        console.log(hour);
+        if (hour > timeTest) {
+            $(this).addClass("past");
+        } else if (hour < timeTest){
+            $(this).addClass("future");
+        } else {
+            $(this).addClass("present")
+        }
+        
+    });
+    
+}
