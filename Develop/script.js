@@ -1,4 +1,6 @@
 myStorage = window.localStorage; 
+// Day and Hour 
+var hour = moment().format('MMMM Do YYYY, h:mm:ss a');
 // Variables for each hour 
 var hour8am = $("#8:00am");
 var hour9am = $("#9:00am");
